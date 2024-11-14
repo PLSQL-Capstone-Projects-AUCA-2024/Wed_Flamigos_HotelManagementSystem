@@ -22,6 +22,8 @@ In a well-coordinated hospitality system, these roles work in tandem to deliver 
 The journey begins when a guest submits a reservation request, either online or in person. At this stage, key details such as room type, check-in and check-out dates, and any special preferences are collected.
 If the requested room is available, the reservation is confirmed, and the guest receives a confirmation message. In case the room is unavailable, alternative options are presented to the guest, such as adjusting the stay dates or selecting a different room type.
 This step sets the foundation for the guest's overall experience, making accuracy and responsiveness crucial.
+### 2. Front Desk Checks Room Availability
+The front desk checks for room availability on the requested dates.
 
 
 
