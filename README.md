@@ -42,8 +42,17 @@ The front desk assigns the room to the guest, updating the room’s status to �
 ### 8. Billing Initiates Billing Record
 The billing system creates a new record for this reservation to track all charges associated with the guest’s stay.
 
+### 9. Guest Uses Hotel Amenities
+During their stay, the guest may use additional services like dining or spa treatments, which incur extra charges.
 
+### 10. Front Desk Updates Billing with Amenity Charges
+The front desk adds charges for amenities used by the guest to the billing record.
 
+### 11. Housekeeping Schedules Room Cleaning
+Housekeeping monitors room usage and schedules cleaning during or after the guest’s stay as necessary.
+
+### 12. Guest Requests Check-Out
+The guest requests check-out at the front desk when ready to leave.
 
 
 
