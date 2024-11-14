@@ -33,6 +33,16 @@ Upon confirming room availability, the front desk finalizes the reservation and 
 
 ### 5. Housekeeping Prepares Room for Guest
 Housekeeping prepares the room by ensuring it is clean and stocked with necessary amenities, marking the room as “ready” for guest arrival.
+### 6. Guest Arrives and Checks In
+The guest arrives at the hotel and checks in at the front desk.
+
+### 7. Front Desk Assigns Room and Checks In Guest
+The front desk assigns the room to the guest, updating the room’s status to “occupied.”
+
+### 8. Billing Initiates Billing Record
+The billing system creates a new record for this reservation to track all charges associated with the guest’s stay.
+
+
 
 
 
