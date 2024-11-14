@@ -1,4 +1,3 @@
-# Wed_Flamigos_HotelManagementSystem
 # Hotel Management System - Swimlane Diagram Documentation
 
 ## Overview
