@@ -24,6 +24,17 @@ If the requested room is available, the reservation is confirmed, and the guest 
 This step sets the foundation for the guest's overall experience, making accuracy and responsiveness crucial.
 ### 2. Front Desk Checks Room Availability
 The front desk checks for room availability on the requested dates.
+### 3. Decision: Room Availability Check
+- *If rooms are available*, the front desk proceeds to confirm the reservation, recording all relevant booking details.
+- *If no rooms are available*, the front desk informs the guest of unavailability, ending the process here for that reservation attempt.
+
+### 4. Front Desk Confirms Reservation
+Upon confirming room availability, the front desk finalizes the reservation and sends confirmation details to the guest.
+
+### 5. Housekeeping Prepares Room for Guest
+Housekeeping prepares the room by ensuring it is clean and stocked with necessary amenities, marking the room as “ready” for guest arrival.
+
+
 
 
 
