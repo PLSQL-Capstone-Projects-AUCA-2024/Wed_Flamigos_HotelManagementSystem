@@ -54,6 +54,19 @@ Housekeeping monitors room usage and schedules cleaning during or after the gues
 ### 12. Guest Requests Check-Out
 The guest requests check-out at the front desk when ready to leave.
 
+### 13. Front Desk Finalizes Billing
+The front desk reviews the billing record to ensure all charges are accurate and complete.
+
+### 14. Billing Generates Final Invoice
+The billing department generates the final invoice, detailing all room charges and additional service costs.
+
+### 15. Billing Processes Payment
+The guest pays the final invoice, completing the financial transaction.
+
+### 16. Guest Receives Invoice and Pays
+The guest receives a copy of the paid invoice as a receipt, concluding the check-out process.
+
+
 
 
 
