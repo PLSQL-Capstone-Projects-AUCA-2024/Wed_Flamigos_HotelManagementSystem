@@ -74,8 +74,12 @@ In a well-coordinated hospitality system, these roles work in tandem to deliver 
 ## Purpose and Benefits
 This swimlane diagram clarifies roles and responsibilities within the hotel management workflow, ensuring smooth guest experiences and efficient departmental coordination. Key benefits include:
 - **Billing Accuracy**
+  The decision point ensures accurate room availability during booking, preventing overbookings and streamlining guest check-in.
 - **Efficient Room Turnover**
+  Updating room status after check-out aids housekeeping in managing room readiness.
 - **Enhanced Guest Experience**
+  Collecting feedback from guests supports ongoing service improvements, promoting overall satisfaction.
+  
 
 
 
