@@ -27,7 +27,7 @@ In the hospitality industry, hotels face challenges in managing guest services e
 # Swimlane
 ## Overview
 This swimlane diagram models the Hotel Management System process, from guest reservation through check-out. The process emphasizes interactions among the *Guest*, *Front Desk*, *Housekeeping*, and *Billing* departments, incorporating a decision point for room availability.
-
+!["Swimlane"](swimlane.drawio.png)
 ## Swimlanes and Their Roles
 
 ### 1. Guest 
