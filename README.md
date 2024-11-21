@@ -79,15 +79,87 @@ This swimlane diagram clarifies roles and responsibilities within the hotel mana
   Updating room status after check-out aids housekeeping in managing room readiness.
 - **Enhanced Guest Experience**
   Collecting feedback from guests supports ongoing service improvements, promoting overall satisfaction.
-  
+  ---
+# Table Creation
+The table were created in the database for each entity and below are the commands used for table creation
 
+## Guests Table
+```sql
+CREATE TABLE Guests (
+    guest_id NUMBER NOT NULL PRIMARY KEY,
+    first_name VARCHAR2(20) NOT NULL,
+    last_name VARCHAR2(20) NOT NULL,
+    email VARCHAR2(100) UNIQUE,
+    phone_number VARCHAR2(20) NOT NULL,
+    address VARCHAR2(255)
+);
+```
 
+## Rooms Table
+```sql
+CREATE TABLE Rooms (
+    room_id NUMBER NOT NULL PRIMARY KEY,
+    room_number VARCHAR2(20) NOT NULL UNIQUE,
+    room_type VARCHAR2(20) NOT NULL,
+    price_per_night NUMBER(10, 2) NOT NULL,
+    availability_status NUMBER(1) DEFAULT 1 NOT NULL,
+    max_occupancy NUMBER NOT NULL
+);
+```
 
+## Reservation Table
 
+```sql
+CREATE TABLE Reservation (
+    reservation_id NUMBER NOT NULL PRIMARY KEY,
+    guest_id NUMBER NOT NULL,
+    room_id NUMBER NOT NULL,
+    check_in_date DATE NOT NULL,
+    check_out_date DATE NOT NULL,
+    reservation_status VARCHAR2(20) DEFAULT 'Pending',
+    FOREIGN KEY (guest_id) REFERENCES Guests(guest_id),
+    FOREIGN KEY (room_id) REFERENCES Rooms(room_id)
+);
+```
 
+## Staff Table
 
+```sql
+CREATE TABLE Staff (
+    staff_id NUMBER NOT NULL PRIMARY KEY,
+    first_name VARCHAR2(20) NOT NULL,
+    last_name VARCHAR2(20) NOT NULL,
+    position VARCHAR2(20) NOT NULL,
+    email VARCHAR2(100) NOT NULL UNIQUE,
+    phone_number VARCHAR2(20) NOT NULL,
+    assigned_room_id NUMBER,
+    FOREIGN KEY (assigned_room_id) REFERENCES Rooms(room_id)
+);
+```
 
+## Billing Table
 
+```sql
+CREATE TABLE Billing (
+    billing_id NUMBER NOT NULL PRIMARY KEY,
+    reservation_id NUMBER NOT NULL,
+    amount NUMBER(10, 2) NOT NULL,
+    payment_status VARCHAR2(20) DEFAULT 'Pending',
+    payment_method VARCHAR2(20),
+    FOREIGN KEY (reservation_id) REFERENCES Reservation(reservation_id)
+);
+```
 
+## Inventor Table
 
-
+```sql
+CREATE TABLE Inventory (
+    item_id NUMBER NOT NULL PRIMARY KEY,
+    item_name VARCHAR2(20) NOT NULL,
+    quantity NUMBER DEFAULT 0 NOT NULL,
+    reorder_level NUMBER NOT NULL
+);
+```
+---
+# ERD Of The Project
+![HotelManagementSystem_ERD](https://github.com/user-attachments/assets/1a893541-9b7c-4d79-9c96-8212a0e25dca)
