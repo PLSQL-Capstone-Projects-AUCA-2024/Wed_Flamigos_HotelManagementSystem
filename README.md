@@ -1,9 +1,32 @@
-# Hotel Management System - Swimlane Diagram Documentation
+# HOTEL MANAGEMENT SYSTEM
 
+## Problem Statement:
+In the hospitality industry, hotels face challenges in managing guest services efficiently due to disconnected processes and manual management of reservations, check-ins, billing, and housekeeping. This fragmented approach often results in booking errors, inconsistent billing, and delayed services, leading to customer dissatisfaction and operational inefficiencies. A comprehensive, centralized Hotel Management System (HMS) is needed to streamline operations, reduce human errors, and improve guest experience by automating bookings, room assignments, billing, and resource management, while providing real-time insights to support data-driven decisions for hotel management.
+
+## Objectives
+- Automate and Centralize Booking Management
+- Enhance Guest Experience
+- Optimize Resource Management
+- Enable Data-Driven Decision-Making
+
+## Main Entities
+- Guests
+- Rooms
+- Reservations
+- Staff
+- Billing
+- Inventory
+
+## Expected outcomes of the database solution
+- Seamless and error-free bookings
+- Enhanced operational efficiency
+- Consistent and accurate billings
+- Optimized resource allocation
+- Informed Decision-making
+---
+# Swimlane
 ## Overview
 This swimlane diagram models the Hotel Management System process, from guest reservation through check-out. The process emphasizes interactions among the *Guest*, *Front Desk*, *Housekeeping*, and *Billing* departments, incorporating a decision point for room availability.
-
----
 
 ## Swimlanes and Their Roles
 
@@ -18,64 +41,41 @@ Ensures accurate financial transactions by creating and maintaining billing reco
 In a well-coordinated hospitality system, these roles work in tandem to deliver a seamless experience for guests while maintaining operational efficiency.
 
 ## Step-by-Step Flow Description with Decision Point
-### 1. Guest Makes a Reservation
-The journey begins when a guest submits a reservation request, either online or in person. At this stage, key details such as room type, check-in and check-out dates, and any special preferences are collected.
-If the requested room is available, the reservation is confirmed, and the guest receives a confirmation message. In case the room is unavailable, alternative options are presented to the guest, such as adjusting the stay dates or selecting a different room type.
-This step sets the foundation for the guest's overall experience, making accuracy and responsiveness crucial.
-### 2. Front Desk Checks Room Availability
-The front desk checks for room availability on the requested dates.
-### 3. Decision: Room Availability Check
-- *If rooms are available*, the front desk proceeds to confirm the reservation, recording all relevant booking details.
-- *If no rooms are available*, the front desk informs the guest of unavailability, ending the process here for that reservation attempt.
+**1. Guest Makes a Reservation**
 
-### 4. Front Desk Confirms Reservation
-Upon confirming room availability, the front desk finalizes the reservation and sends confirmation details to the guest.
+**2. Front Desk Checks Room Availability**
 
-### 5. Housekeeping Prepares Room for Guest
-Housekeeping prepares the room by ensuring it is clean and stocked with necessary amenities, marking the room as “ready” for guest arrival.
-### 6. Guest Arrives and Checks In
-The guest arrives at the hotel and checks in at the front desk.
+**3. Decision: Room Availability Check**
 
-### 7. Front Desk Assigns Room and Checks In Guest
-The front desk assigns the room to the guest, updating the room’s status to “occupied.”
+**4. Front Desk Confirms Reservation**
 
-### 8. Billing Initiates Billing Record
-The billing system creates a new record for this reservation to track all charges associated with the guest’s stay.
+**5. Housekeeping Prepares Room for Guest**
 
-### 9. Guest Uses Hotel Amenities
-During their stay, the guest may use additional services like dining or spa treatments, which incur extra charges.
+**6. Guest Arrives and Checks In**
 
-### 10. Front Desk Updates Billing with Amenity Charges
-The front desk adds charges for amenities used by the guest to the billing record.
+**7. Front Desk Assigns Room and Checks In Guest**
 
-### 11. Housekeeping Schedules Room Cleaning
-Housekeeping monitors room usage and schedules cleaning during or after the guest’s stay as necessary.
+**8. Billing Initiates Billing Record**
 
-### 12. Guest Requests Check-Out
-The guest requests check-out at the front desk when ready to leave.
+**9. Guest Uses Hotel Amenities**
 
-### 13. Front Desk Finalizes Billing
-The front desk reviews the billing record to ensure all charges are accurate and complete.
+**10. Front Desk Updates Billing with Amenity Charges**
 
-### 14. Billing Generates Final Invoice
-The billing department generates the final invoice, detailing all room charges and additional service costs.
+**11. Housekeeping Schedules Room Cleaning**
 
-### 15. Billing Processes Payment
-The guest pays the final invoice, completing the financial transaction.
+**12. Guest Requests Check-Out**
 
-### 16. Guest Receives Invoice and Pays
-The guest receives a copy of the paid invoice as a receipt, concluding the check-out process.
+**13. Front Desk Finalizes Billing**
 
+**14. Billing Generates Final Invoice**
 
-
+**15. Guest Receives Invoice and Pays**
 
 ## Purpose and Benefits
 This swimlane diagram clarifies roles and responsibilities within the hotel management workflow, ensuring smooth guest experiences and efficient departmental coordination. Key benefits include:
-
-- **Billing Accuracy**: The decision point ensures accurate room availability during booking, preventing overbookings and streamlining guest check-in.
-- **Efficient Room Turnover**: Updating room status after check-out aids housekeeping in managing room readiness.
-- **Enhanced Guest Experience**: Collecting feedback from guests supports ongoing service improvements, promoting overall satisfaction.
-
+- **Billing Accuracy**
+- **Efficient Room Turnover**
+- **Enhanced Guest Experience**
 
 
 
